@@ -4,36 +4,39 @@ import java.util.Scanner;
 
 public class FindText {
 	public static void main(String[] args){
-		Scanner in = new Scanner(System.in);
+		String word = readWord();
+		String separator = readWord();
 
-		String word = in.next();
-		String separator = in.next();
+		int answer = solution(word, separator.charAt(0));
 
-		System.out.println(solution(word, separator.charAt(0)));
+		System.out.println(answer);
 	}
 
 	public static int solution(String word, char separator) {
 		int cnt = 0;
-		char separatorCase = isLowerOrUpperCase(separator);
+		char separatorChangeCase = isLowerOrUpperCase(separator);
 
 		for (int i = 0; i < word.length(); i++) {
-			if (word.charAt(i) == separator || word.charAt(i) == separatorCase) {
+			if (word.charAt(i) == separator || word.charAt(i) == separatorChangeCase) {
 				cnt++;
 			}
 		}
+
 		return cnt;
 	}
 
 	private static char isLowerOrUpperCase(char separator) {
-		char separatorCase = 0;
-
 		if (Character.isUpperCase(separator)) {
-			separatorCase = (char)(separator + 32);
-		}
-		if (Character.isLowerCase(separator)) {
-			separatorCase = (char)(separator - 32);
+			return (char)(separator + 32);
 		}
 
-		return separatorCase;
+		return (char)(separator - 32);
 	}
+
+	private static String readWord() {
+		Scanner in = new Scanner(System.in);
+
+		return in.nextLine();
+	}
+	
 }
