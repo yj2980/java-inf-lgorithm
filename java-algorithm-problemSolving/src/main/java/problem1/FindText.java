@@ -38,5 +38,5 @@ public class FindText {
 
 		return in.nextLine();
 	}
-	
+
 }
