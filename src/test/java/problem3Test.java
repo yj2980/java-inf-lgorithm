@@ -1,2 +1,17 @@
-package PACKAGE_NAME;public class problem3Test {
+import org.junit.jupiter.api.Test;
+
+import problem3.WordInSentence;
+
+public class problem3Test {
+
+	@Test
+	void split_test() {
+		String sentence = "it is time to study";
+
+		WordInSentence problem = new WordInSentence();
+
+		if (!(problem.solution(sentence).equals("study"))) {
+			throw new IllegalStateException();
+		}
+	}
 }
