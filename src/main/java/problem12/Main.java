@@ -29,27 +29,12 @@ public class Main {
 		return result;
 	}
 
-	private int createExponent(int iterations) {
-		int exponent = 1;
-
-		for (int i = 0; i < iterations; i++) {
-			exponent *= 2;
-		}
-
-		return exponent;
-	}
-
 	private int convertBinaryToDecimal(String binaryNumber) {
-		int decimal = 0;
+		String decimal = new StringBuilder(binaryNumber).reverse().toString();
 
-		for (int i = 0; i < binaryNumber.length(); i++) {
-			int exponent = createExponent(i);
-
-			decimal += (binaryNumber.charAt(i) - '0') * exponent;
-		}
-
-		return decimal;
+		return Integer.parseInt(decimal, 2);
 	}
+
 	private List<String> convertStringToBinaryNumber(String cryptogram) {
 		List<String> binaryNumbers = new ArrayList<>();
 
@@ -62,16 +47,7 @@ public class Main {
 	}
 
 	private String createBinaryNumberByCryptogram(String cryptogram) {
-		String binaryNumber = "";
-
-		for (char letter : cryptogram.toCharArray()) {
-			if (letter == '#') {
-				binaryNumber += 1;
-				continue;
-			}
-			binaryNumber += 0;
-		}
-
-		return binaryNumber;
+		return cryptogram.replace('#', '1')
+				.replace('*', '0');
 	}
 }
