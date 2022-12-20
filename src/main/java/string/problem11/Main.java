@@ -1,4 +1,4 @@
-package problem11;
+package string.problem11;
 
 import java.util.Scanner;
 import java.util.Stack;
