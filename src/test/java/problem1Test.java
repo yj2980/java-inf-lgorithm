@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import problem1.FindText;
+import string.problem1.FindText;
 
 public class problem1Test {
 

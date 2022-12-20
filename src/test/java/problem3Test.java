@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import problem3.WordInSentence;
+import string.problem3.WordInSentence;
 
 public class problem3Test {
 
