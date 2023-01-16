@@ -25,6 +25,9 @@ public class Main {
 			prince.add(i);
 		}
 
+		System.out.println(prince);
+
+
 		while (prince.size() > 1) {
 			for (int k = 1; k < excludedNumber; k++) {
 				prince.add(prince.remove());
