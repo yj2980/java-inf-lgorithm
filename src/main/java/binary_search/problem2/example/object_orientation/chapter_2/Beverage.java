@@ -1,4 +1,4 @@
-package example.object_orientation.chapter_2;
+package binary_search.problem2.example.object_orientation.chapter_2;
 
 public class Beverage {
 
