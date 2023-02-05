@@ -1,4 +1,4 @@
-package graph_search.depth_first_searsh.baekjoon.problem24480;
+package graph_search.depth_first_search.baekjoon.problem24480;
 
 import java.util.Collections;
 import java.util.Iterator;

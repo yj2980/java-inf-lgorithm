@@ -1,4 +1,4 @@
-package graph_search.depth_first_searsh.baekjoon.problem24479;
+package graph_search.depth_first_search.baekjoon.problem24479;
 
 import java.util.ArrayList;
 import java.util.Collections;
