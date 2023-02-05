@@ -3,7 +3,7 @@ package graph_search.breadth_first_search.problem1;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import graph_search.depth_first_searsh.problem1.Node;
+import graph_search.depth_first_search.problem1.Node;
 
 public class Main {
 	static Node root;

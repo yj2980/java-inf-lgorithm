@@ -1,4 +1,4 @@
-package graph_search.depth_first_searsh.problem1;
+package graph_search.depth_first_search.problem1;
 
 public class Node {
 	public int data;

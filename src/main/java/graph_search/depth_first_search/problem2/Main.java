@@ -1,4 +1,4 @@
-package graph_search.depth_first_searsh.problem2;
+package graph_search.depth_first_search.problem2;
 
 import java.util.Scanner;
 
